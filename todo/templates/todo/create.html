@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %} Nueva Tarea {% endblock %}</h1>
+{% endblock%}
+
+{% block content %}
+  <form method="post">
+      <label>Descripcion</label>
+      <input type="text" name="Descripcion" id="descripcion" required>
+      <input type="submit" name="" value="Guardar">
+  </form>
+  {% endblock %}
